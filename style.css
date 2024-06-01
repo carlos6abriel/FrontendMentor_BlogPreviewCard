@@ -1,0 +1,134 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --black:  hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Figtree';
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 8px 8px 1px var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.img img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.data{
+    margin: 24px 0px 18px 0px;
+}
+
+.dataLearning{
+    display: inline-block;
+    padding: 7px 13px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.dataPublished{
+    font-size: 14px;
+    margin-top: 13px;
+    font-weight: 500;
+}
+
+.text a{
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.text a:hover{
+    color: var(--yellow);
+}
+
+.text p{
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 16px 0px 22px 0px;
+    width: 35ch;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profileImg{
+    width: 32px;
+    height: 32px;
+}
+
+.profileImg img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profileImg{
+    flex: 1;
+}
+
+.profileName{
+    flex: 7;
+}
+
+.profileName span{
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 800;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media (max-width:375px) {
+    main{
+        width: 325px;
+    }
+    .dataLearning{
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+    .dataPublished{
+        font-size: 13px;
+    }
+    .text a{
+        font-size: 18px;
+    }
+    .text p{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .profileName{
+        margin-left: 10px;
+    }
+}
